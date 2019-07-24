@@ -1,8 +1,8 @@
-var puppeteer = require('puppeteer');
+const puppeteer = require('puppeteer');
 
-var BASE_URL = "https://instagram.com/"
+const BASE_URL = "https://www.instagram.com/"
 
-var instagram = {
+const instagram = {
     browser: null,
     page: null,
 
@@ -11,7 +11,7 @@ var instagram = {
             headless: false
         })
 
-        instagram.page = await instagram.browser.newPage()
+        instagram.page = await instagram.browser.newPage();
 
         await instagram.page.goto(BASE_URL, { waitUntil: 'networkidle2' });
     }

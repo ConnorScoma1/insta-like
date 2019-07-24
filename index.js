@@ -1,6 +1,10 @@
 
-const ig = require('./instagram')
+const ig = require('./instagram.js')
 
 (async () => {
+    
+    await ig.initialize();
 
-}) ()
+    debugger;
+
+})()
