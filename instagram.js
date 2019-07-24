@@ -13,7 +13,15 @@ const instagram = {
 
         instagram.page = await instagram.browser.newPage();
 
+    },
+
+    login: async (username, password) => {
+
         await instagram.page.goto(BASE_URL, { waitUntil: 'networkidle2' });
+
+        let loginButton = await instagram.page.$x('//a[contains(text(), "Log in")]');
+
+        debugger;
     }
 }
 
