@@ -13,6 +13,8 @@ var instagram = {
 
         instagram.page = await instagram.browser.newPage()
 
-        await instagram.page.goto()
+        await instagram.page.goto(BASE_URL, { waitUntil: 'networkidle2' });
     }
 }
+
+module.exports = instagram;
