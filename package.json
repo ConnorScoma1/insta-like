@@ -19,7 +19,7 @@
   "homepage": "https://github.com/ConnorScoma1/insta-like#readme",
   "dependencies": {
     "async": "^3.1.0",
-    "i": "^0.3.6",
+    "i": "^0.3.7",
     "npm": "^6.10.2",
     "puppeteer": "^1.19.0"
   }
